@@ -1,5 +1,21 @@
 <!-- Basic JavaScript-rendered Hello World -->
 <!-- http://localhost:3000/isolated/exercise/01.html -->
+<HTML>
+    <head>
+    </head>
+    <body>
+        <script type="module">
+            const rootElement = document.createElement('div');
+            rootElement.id="root";
+            document.body.appendChild(rootElement);
+            const div=document.createElement('div');
+            div.className="container";
+            div.textContent = "Hello World";
+            rootElement.append(div);
+            </script>
+        </div>
+    </body>
+</HTML>
 
 <!-- 🐨 Create (in HTML) a <body> with a <div> with the id of "root" -->
 <!-- 🐨 Then create a <script type="module"> for your JavaScript -->
@@ -17,3 +33,4 @@
 <!-- 🐨 Append the div to the root div using `append` -->
 <!--   💰 document.getElementById('root') -->
 <!--   📜 https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/append -->
+
